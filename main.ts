@@ -15,13 +15,14 @@ basic.forever(function () {
     basic.pause(5000)
     strip.clear()
     for (let index = 0; index < 4; index++) {
-        basic.pause(500)
         strip.clear()
         strip.show()
         basic.pause(500)
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
         strip.show()
+        basic.pause(500)
     }
     strip.clear()
     strip.show()
+    basic.pause(500)
 })
